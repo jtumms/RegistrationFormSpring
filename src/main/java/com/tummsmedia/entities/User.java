@@ -1,4 +1,4 @@
-package com.tummsmedia.Entities;
+package com.tummsmedia.entities;
 
 import javax.persistence.*;
 
@@ -15,7 +15,7 @@ public class User {
     private int id;
 
     @Column(nullable = false)
-    private String name;
+    private String username;
 
     @Column(nullable = false)
     private String address;
@@ -26,8 +26,8 @@ public class User {
     public User() {
     }
 
-    public User(String name, String address, String email) {
-        this.name = name;
+    public User(String username, String address, String email) {
+        this.username = username;
         this.address = address;
         this.email = email;
     }
@@ -40,12 +40,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getusername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setuserame(String name) {
+        this.username = username;
     }
 
     public String getAddress() {
